@@ -2,7 +2,10 @@
 // ... данные для списка "Бомбардиры" ...
 const goalsData = [
     { number: "1.", name: "Костич", counter: "2" },
-    { number: "2.", name: "Пашаев", counter: "1" },
+    { number: "2.", name: "Волконский", counter: "1" },
+    { number: "3.", name: "Шеин", counter: "1" },
+    { number: "4.", name: "Петрищев", counter: "1" },
+    { number: "6.", name: "Пашаев", counter: "1" },
     // Добавьте остальных игроков
 ];
 
@@ -16,8 +19,8 @@ const assistsData = [
 
 // Статистика вратарей
 const goalkeepersData = [
-    { number: "1.", name: "Мищенко", counter: "4" },
-    { number: "2.", name: "Сыпченко", counter: "3" },
+    { number: "1.", name: "Сыпченко", counter: "11" },
+    { number: "2.", name: "Мищенко", counter: "4" },
     { number: "3.", name: "Исаев", counter: "3" },
     // Добавьте остальных вратарей
 ];
