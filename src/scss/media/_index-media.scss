@@ -316,6 +316,7 @@
     }
 
     .scrolling-wrapper {
+        display: none;
         overflow-x: auto;
         /* используем auto вместо scroll */
         overflow-y: hidden;
@@ -332,6 +333,7 @@
     }
 
     .scrolling-wrapper .card {
+        display: none;
         display: inline-block;
         padding: 10px 20px;
         overflow-x: hidden;
@@ -339,6 +341,7 @@
     }
 
     .scrolling-wrapper .card img {
+        display: none;
         height: auto;
         /* Установите высоту изображений в автоматический режим */
         max-height: 50vh;
@@ -350,11 +353,13 @@
 
     /* меняем курсор на grabbing при перетаскивании изображения */
     .scrolling-wrapper .card img:active {
+        display: none;
         cursor: grabbing;
         overflow-x: hidden;
     }
 
     .scrolling-wrapper::-webkit-scrollbar {
+        display: none;
         display: none;
         overflow-x: hidden;
     }
