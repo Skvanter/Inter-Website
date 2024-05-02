@@ -260,7 +260,7 @@
 
             .wrapper {
                 width: 90%;
-                max-width: 200px;
+                max-width: 500px;
 
                 .title {
                     display: flex;
@@ -281,7 +281,6 @@
                         .number {
                             display: flex;
                             justify-content: flex-start;
-                            width: 20px;
                         }
 
                         .player {
@@ -291,7 +290,6 @@
                         .counter {
                             display: flex;
                             justify-content: flex-end;
-                            width: 30px;
                         }
                     }
                 }
@@ -316,4 +314,20 @@
             display: none;
         }
     }
+
+    .scrolling-wrapper .card {
+        display: inline-block;
+        padding: 10px 0px;
+        overflow-x: hidden;
+        /* Добавляем скрытие по горизонтали для изображений */
+    }
+
+    .scrolling-wrapper .card img {
+        height: 50svh;
+        cursor: grab;
+        overflow-x: hidden;
+        /* меняем курсор на grab при наведении на изображение */
+    }
+
+
 }

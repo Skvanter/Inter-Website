@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 794px;
+    height: 80svh;
     width: 100%;
     position: relative;
 
@@ -39,7 +39,7 @@
         justify-content: center;
 
         .text {
-            font-size: 95px;
+            font-size: 10svh;
         }
 
         .view {
@@ -349,7 +349,7 @@
 
 .view_in_team {
     width: 100%;
-    height: 650px;
+    height: 70svh;
     display: flex;
 
     .team_88 {
@@ -411,7 +411,7 @@
             .text {
                 display: flex;
                 justify-content: center;
-                font-size: 135px;
+                font-size: 15svh;
             }
 
             .view {
@@ -483,7 +483,7 @@
             .text {
                 display: flex;
                 justify-content: center;
-                font-size: 135px;
+                font-size: 15svh;
             }
 
             .view {
@@ -591,7 +591,7 @@
 
 .logo_block {
     display: flex;
-    height: 700px;
+    height: 70svh;
     width: 100%;
     justify-content: center;
     position: relative;
@@ -599,7 +599,7 @@
 
     .background {
         background-image: url(/img/Interphoto.png);
-        height: 700px;
+        height: 70svh;
         width: 100%;
         background-repeat: no-repeat;
         background-position: center;
@@ -607,14 +607,55 @@
     }
 
     .text {
-        margin-top: 590px;
+        margin-top: 60svh;
         color: $light;
-        font-size: 30px;
+        font-size: 3svh;
         justify-content: center;
         align-items: center;
         text-align: center;
         font-family: PLAY-BOLD;
     }
+}
+
+.scrolling-wrapper {
+    overflow-x: auto;
+    /* используем auto вместо scroll */
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+    /* Добавляем фиксированную ширину */
+    -ms-overflow-style: none;
+    /* убираем стандартный скролл для IE */
+    scrollbar-width: none;
+    /* убираем стандартный скролл для Firefox */
+    scroll-behavior: smooth;
+    /* делаем скролл плавным */
+}
+
+.scrolling-wrapper .card {
+    display: inline-block;
+    padding: 10px 20px;
+    overflow-x: hidden;
+    /* Добавляем скрытие по горизонтали для изображений */
+}
+
+.scrolling-wrapper .card img {
+    height: 70svh;
+    cursor: grab;
+    overflow-x: hidden;
+    /* меняем курсор на grab при наведении на изображение */
+}
+
+/* меняем курсор на grabbing при перетаскивании изображения */
+.scrolling-wrapper .card img:active {
+    cursor: grabbing;
+    overflow-x: hidden;
+}
+
+.scrolling-wrapper::-webkit-scrollbar {
+    display: none;
+    overflow-x: hidden;
 }
 
 @import "media/_index-media.scss";

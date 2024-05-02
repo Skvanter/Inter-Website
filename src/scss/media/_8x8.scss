@@ -284,7 +284,7 @@
                 color: $light;
                 text-align: center;
                 width: 25%;
-                height: 1000px;
+                height: 250px;
 
                 .wrapper {
                     width: 90%;
@@ -612,6 +612,7 @@
             display: flex;
             font-size: 16px;
 
+
             .statistic:nth-child(1) {
                 background-color: $dark;
             }
@@ -637,7 +638,6 @@
                 color: $light;
                 text-align: center;
                 width: 25%;
-                height: 950px;
 
                 .wrapper {
                     width: 90%;
@@ -647,7 +647,7 @@
                         display: flex;
                         justify-content: center;
                         padding-bottom: 30px;
-                        font-size: 22px;
+                        font-size: 18px;
                         font-family: PLAY-BOLD;
                         height: 75px;
                         padding-top: 20px;

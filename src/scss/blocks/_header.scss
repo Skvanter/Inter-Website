@@ -4,7 +4,7 @@ header {
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 190px;
+    height: 20svh;
     z-index: 99;
     border-bottom: 1px solid hsl(0, 0%, 40%, 0.33);
     transition: transform 0.4s ease-out;
@@ -14,7 +14,7 @@ header {
     }
 
     .header_wrapper {
-        width: 920px;
+        width: 100svh;
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -32,8 +32,8 @@ header {
                     margin-right: 10px;
 
                     img {
-                        height: 80px;
-                        width: 80px;
+                        height: 8svh;
+                        width: 8svh;
                     }
                 }
 
@@ -60,11 +60,11 @@ header {
                         font-family: PLAY-BOLD;
 
                         &:first-child {
-                            font-size: 36px;
+                            font-size: 4svh;
                         }
 
                         &:last-child {
-                            font-size: 16px;
+                            font-size: 1.6svh;
                         }
 
                     }
@@ -82,7 +82,7 @@ header {
                     margin-left: 20px;
 
                     a {
-                        height: 30px;
+                        height: 3.7svh;
 
                         &:first-child {
                             margin-right: 10px;
@@ -145,7 +145,7 @@ header {
 
         .bottom_parth {
             width: 100%;
-            padding-top: 25px;
+            padding-top: 2.5svh;
             display: flex;
             justify-content: center;
 
@@ -155,20 +155,21 @@ header {
                 justify-content: space-between;
                 font-family: PLAY-REGULAR;
                 color: $light;
+                font-size: 1.6svh;
 
-                li{
+                li {
                     display: flex;
                     align-items: center;
                     position: relative;
 
-                    #icon{
+                    #icon {
                         user-select: none;
                         display: block;
                         cursor: pointer;
                         padding: 10px 10px 10px 0;
                         height: 100%;
 
-                        p{
+                        p {
                             transform: rotate(90deg);
                         }
 
@@ -177,7 +178,7 @@ header {
                         }
                     }
 
-                    .submenu{
+                    .submenu {
                         z-index: 99;
                         position: absolute;
                         top: 40px;
@@ -185,25 +186,25 @@ header {
                         display: none;
                         flex-direction: column;
 
-                        &.open{
+                        &.open {
                             display: flex;
                         }
 
-                        li{
+                        li {
                             display: block;
 
-                            a{
+                            a {
                                 display: block;
                                 padding: 10px 20px;
                             }
-                        } 
+                        }
                     }
 
                     a {
                         color: $light;
                         transition: .3s;
                         padding: 10px;
-    
+
                         &:hover {
                             color: $dark_light;
                         }

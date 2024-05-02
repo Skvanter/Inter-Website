@@ -210,7 +210,7 @@ const zanettiTopList = document.querySelector('.zanetti_top-list');
 zanettiTopData.sort((a, b) => b.training - a.training);
 
 // Создаем элементы списка и добавляем их в разметку
-zanettiTopData.slice(0, 3).forEach((player, index) => {
+zanettiTopData.slice(0).forEach((player, index) => {
     const listItem = document.createElement('li');
     listItem.innerHTML = `
 <div class="position">${index + 1 + "."}</div>
@@ -232,3 +232,50 @@ const differenceElement = document.querySelector('.difference .number');
 
 // Обновляем значение разницы
 differenceElement.textContent = `${difference >= 0 ? '+' : ''}${difference}`;
+
+
+
+// Создать элементы списка для "Бомбардиров" и добавить их в соответствующий блок
+const goalsListTop = document.querySelector('.goals-list-top');
+createListItems(goalsData, goalsListTop);
+
+// Создать элементы списка для "Ассистентов" и добавить их в соответствующий блок
+const assistsListTop = document.querySelector('.assists-list-top');
+createListItems(assistsData, assistsListTop);
+
+// Создать элементы списка для "Голов+Пасов" и добавить их в соответствующий блок
+const goalsAssistsListTop = document.querySelector('.goals-assists-list-top');
+createListItems(goalsAssistsArray, goalsAssistsListTop);
+
+// Создать элементы списка для "Вратарей" и добавить их в соответствующий блок
+const goalkeepersListTop = document.querySelector('.goalkeepers-list-top');
+createListItems(goalkeepersData, goalkeepersListTop);
+
+// Создать элементы списка для "Матчей на ноль" и добавить их в соответствующий блок
+const goalkeepersListZeroTop = document.querySelector('.goalkeepers-list-zero-top');
+createListItems(goalkeepersZero, goalkeepersListZeroTop);
+
+// Создать элементы списка для "Топ-3 приз Дзанетти" и добавить их в соответствующий блок
+const zanettiTopListTop = document.querySelector('.zanetti_top-list-top');
+createListItems(zanettiTopData, zanettiTopListTop);
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Функция для создания элементов списка
+    const createListItems = (data, parentElement) => {
+        // Отсортировать данные
+        data.sort((a, b) => parseInt(b.counter) - parseInt(a.counter));
+        // Создать элементы списка для 5 лучших игроков
+        for (let i = 0; i < Math.min(data.length, 5); i++) {
+            const player = data[i];
+            const listItem = document.createElement('li');
+            listItem.innerHTML = `
+                <div class="number">${player.number}</div>
+                <div class="player">${player.name}</div>
+                <div class="counter">${player.counter}</div>
+            `;
+            parentElement.appendChild(listItem);
+        }
+    };
+
+});
