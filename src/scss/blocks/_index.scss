@@ -641,7 +641,10 @@
 }
 
 .scrolling-wrapper .card img {
-    height: 70svh;
+    height: auto;
+    /* Установите высоту изображений в автоматический режим */
+    max-height: 70vh;
+    /* Установите максимальную высоту для изображений */
     cursor: grab;
     overflow-x: hidden;
     /* меняем курсор на grab при наведении на изображение */

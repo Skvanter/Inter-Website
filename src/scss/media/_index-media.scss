@@ -315,18 +315,48 @@
         }
     }
 
+    .scrolling-wrapper {
+        overflow-x: auto;
+        /* используем auto вместо scroll */
+        overflow-y: hidden;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+        width: 100%;
+        /* Добавляем фиксированную ширину */
+        -ms-overflow-style: none;
+        /* убираем стандартный скролл для IE */
+        scrollbar-width: none;
+        /* убираем стандартный скролл для Firefox */
+        scroll-behavior: smooth;
+        /* делаем скролл плавным */
+    }
+
     .scrolling-wrapper .card {
         display: inline-block;
-        padding: 10px 0px;
+        padding: 10px 20px;
         overflow-x: hidden;
         /* Добавляем скрытие по горизонтали для изображений */
     }
 
     .scrolling-wrapper .card img {
-        height: 50svh;
+        height: auto;
+        /* Установите высоту изображений в автоматический режим */
+        max-height: 50vh;
+        /* Установите максимальную высоту для изображений */
         cursor: grab;
         overflow-x: hidden;
         /* меняем курсор на grab при наведении на изображение */
+    }
+
+    /* меняем курсор на grabbing при перетаскивании изображения */
+    .scrolling-wrapper .card img:active {
+        cursor: grabbing;
+        overflow-x: hidden;
+    }
+
+    .scrolling-wrapper::-webkit-scrollbar {
+        display: none;
+        overflow-x: hidden;
     }
 
 
