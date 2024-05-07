@@ -9,6 +9,8 @@ const config = {
 		statistics8x8: './src/js/statistics8x8.js',
 		scrollindex: './src/js/scrollindex.js',
 		levelplayer: './src/js/levelplayer.js',
+		matchlist11x11: './src/js/matchlist11x11.js',
+		matchlist8x8: './src/js/matchlist8x8.js',
 
 	},
 	output: {

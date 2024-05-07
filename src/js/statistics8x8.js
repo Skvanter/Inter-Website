@@ -21,7 +21,7 @@ const goalsData = [{
 }, {
     number: "6.",
     name: "Матвеев",
-    counter: "2"
+    counter: "3"
 }, {
     number: "7.",
     name: "Белкин",
@@ -43,7 +43,7 @@ const goalsData = [{
 {
     number: "10.",
     name: "Касулин",
-    counter: "1"
+    counter: "2"
 },
 
 {
@@ -63,6 +63,20 @@ const goalsData = [{
     name: "Абянов",
     counter: "1"
 },
+
+{
+    number: "14.",
+    name: "Хакимов",
+    counter: "2"
+},
+
+{
+    number: "15.",
+    name: "Бубнов",
+    counter: "1"
+},
+
+
 
     // Добавьте остальных игроков
 ];
@@ -107,7 +121,7 @@ const assistsData = [{
 }, {
     number: "1.",
     name: "Матвеев",
-    counter: "1"
+    counter: "2"
 }, {
     number: "1.",
     name: "Котов",
@@ -121,11 +135,25 @@ const assistsData = [{
     name: "Волконский",
     counter: "3"
 },
-
 {
     number: "1.",
     name: "Тапчан",
     counter: "2"
+},
+{
+    number: "1.",
+    name: "Бубнов",
+    counter: "1"
+},
+{
+    number: "1.",
+    name: "Хакимов",
+    counter: "1"
+},
+{
+    number: "1.",
+    name: "Касулин",
+    counter: "1"
 },
 
 
@@ -265,8 +293,8 @@ goalkeepersData.forEach((goalkeeper) => {
 
 const goalkeepersZero = [{
     number: "1.",
-    name: "-",
-    counter: "-"
+    name: "Сыпченко",
+    counter: "1"
 },
     // Добавьте остальных вратарей
 ];
