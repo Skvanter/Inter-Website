@@ -5,7 +5,7 @@ const goalsData = [{
 }, {
     number: "2.",
     name: "Языков",
-    counter: "22"
+    counter: "25"
 }, {
     number: "3.",
     name: "Макарчев",
@@ -31,7 +31,7 @@ const goalsData = [{
 {
     number: "8.",
     name: "Голуб",
-    counter: "8"
+    counter: "9"
 },
 
 {
@@ -55,7 +55,7 @@ const goalsData = [{
 {
     number: "12.",
     name: "Автогол",
-    counter: "1"
+    counter: "2"
 },
 
 {
@@ -67,7 +67,7 @@ const goalsData = [{
 {
     number: "14.",
     name: "Хакимов",
-    counter: "2"
+    counter: "4"
 },
 
 {
@@ -89,7 +89,7 @@ const assistsData = [{
 }, {
     number: "1.",
     name: "Власов",
-    counter: "4"
+    counter: "5"
 }, {
     number: "1.",
     name: "Мищенко",
@@ -97,15 +97,15 @@ const assistsData = [{
 }, {
     number: "1.",
     name: "Белоножкин",
-    counter: "5"
+    counter: "7"
 }, {
     number: "1.",
     name: "Языков",
-    counter: "8"
+    counter: "9"
 }, {
     number: "1.",
     name: "Шеин",
-    counter: "4"
+    counter: "5"
 }, {
     number: "1.",
     name: "Петрищев",
@@ -156,8 +156,37 @@ const assistsData = [{
     counter: "1"
 },
 
-
     // Добавьте остальных игроков
+];
+
+const goalkeepersData = [{
+    number: "2.",
+    name: "Мищенко",
+    counter: "13"
+}, {
+    number: "1.",
+    name: "Мытько",
+    counter: "24"
+}, {
+    number: "3.",
+    name: "Исаев",
+    counter: "19"
+}, {
+    number: "4.",
+    name: "Сыпченко",
+    counter: "8"
+},
+    // Добавьте остальных вратарей
+];
+
+// Матчи на ноль
+
+const goalkeepersZero = [{
+    number: "1.",
+    name: "Сыпченко",
+    counter: "1"
+},
+    // Добавьте остальных вратарей
 ];
 
 const sortByCounterDescending = (data) => {
@@ -250,25 +279,6 @@ goalsAssistsArray.forEach((player, index) => {
     goalsAssistsList.appendChild(listItem);
 });
 
-const goalkeepersData = [{
-    number: "2.",
-    name: "Мищенко",
-    counter: "13"
-}, {
-    number: "1.",
-    name: "Мытько",
-    counter: "24"
-}, {
-    number: "3.",
-    name: "Исаев",
-    counter: "12"
-}, {
-    number: "4.",
-    name: "Сыпченко",
-    counter: "4"
-},
-    // Добавьте остальных вратарей
-];
 
 // Находим элемент списка вратарей
 const goalkeepersList = document.querySelector('.goalkeepers-list');
@@ -289,15 +299,6 @@ goalkeepersData.forEach((goalkeeper) => {
     goalkeepersList.appendChild(listItem);
 });
 
-// Матчи на ноль
-
-const goalkeepersZero = [{
-    number: "1.",
-    name: "Сыпченко",
-    counter: "1"
-},
-    // Добавьте остальных вратарей
-];
 
 // Находим элемент списка вратарей
 const goalkeepersListZero = document.querySelector('.goalkeepers-list-zero');

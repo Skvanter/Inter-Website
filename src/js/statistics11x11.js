@@ -6,6 +6,7 @@ const goalsData = [
     { number: "3.", name: "Шеин", counter: "1" },
     { number: "4.", name: "Петрищев", counter: "1" },
     { number: "6.", name: "Пашаев", counter: "1" },
+    { number: "7.", name: "Пожидаев", counter: "1" },
     // Добавьте остальных игроков
 ];
 
@@ -14,14 +15,15 @@ const assistsData = [
     { number: "1.", name: "Власов", counter: "1" },
     { number: "2.", name: "Пашаев", counter: "1" },
     { number: "3.", name: "Долгов", counter: "1" },
+    { number: "4.", name: "Костич", counter: "1" },
     // Добавьте остальных игроков
 ];
 
 // Статистика вратарей
 const goalkeepersData = [
-    { number: "1.", name: "Сыпченко", counter: "11" },
+    { number: "1.", name: "Сыпченко", counter: "13" },
     { number: "2.", name: "Мищенко", counter: "4" },
-    { number: "3.", name: "Исаев", counter: "3" },
+    { number: "3.", name: "Исаев", counter: "9" },
     // Добавьте остальных вратарей
 ];
 
