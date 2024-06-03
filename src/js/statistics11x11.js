@@ -8,6 +8,7 @@ const goalsData = [
     { number: "6.", name: "Пашаев", counter: "1" },
     { number: "7.", name: "Пожидаев", counter: "1" },
     { number: "8.", name: "Нишанов", counter: "1" },
+    { number: "9.", name: "Шарапов", counter: "1" },
     // Добавьте остальных игроков
 ];
 
