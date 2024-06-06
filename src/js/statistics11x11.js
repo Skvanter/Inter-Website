@@ -64,7 +64,7 @@ const zanettiTopData = [
     { name: "Сыпченко", training: 16 },
     { name: "Амири", training: 29 },
     { name: "Шаропов", training: 29 },
-    { name: "Шеин", training: 26 },
+    { name: "Шеин", training: 27 },
     { name: "Юсуф", training: 4 },
     { name: "Аралекян", training: 5 },
     { name: "Демидов", training: 1 },
