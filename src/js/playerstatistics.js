@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function () {
         { number: "47", name: "Языков", matches: "180", goals: "311", assist: "127", zeromatch: "0", lostgoals: "0", team: "pro" },
         { number: "50", name: "Штепа", matches: "1", goals: "0", assist: "0", zeromatch: "0", lostgoals: "0", team: "pro" },
         { number: "52", name: "Савельев", matches: "7", goals: "0", assist: "0", zeromatch: "0", lostgoals: "0", team: "pro" },
-        { number: "55", name: "Нестор", matches: "40", goals: "0", assist: "0", zeromatch: "0", lostgoals: "0", team: "pro" },
+        { number: "55", name: "Нестор", matches: "40", goals: "0", assist: "4", zeromatch: "0", lostgoals: "0", team: "pro" },
         { number: "63", name: "Скворцов", matches: "100", goals: "2", assist: "9", zeromatch: "0", lostgoals: "0", team: "pro" },
         { number: "64", name: "Беров", matches: "39", goals: "39", assist: "3", zeromatch: "0", lostgoals: "0", team: "pro" },
         { number: "66", name: "Королев", matches: "10", goals: "0", assist: "0", zeromatch: "0", lostgoals: "0", team: "pro" },
