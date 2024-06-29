@@ -2,11 +2,13 @@
 // ... данные для списка "Бомбардиры" ...
 const goalsData = [
     { number: "1.", name: "Костич", counter: "2" },
-    { number: "2.", name: "Волконский", counter: "1" },
+    { number: "2.", name: "Волконский", counter: "2" },
     { number: "3.", name: "Шеин", counter: "1" },
     { number: "4.", name: "Петрищев", counter: "1" },
     { number: "6.", name: "Пашаев", counter: "1" },
     { number: "7.", name: "Пожидаев", counter: "1" },
+    { number: "8.", name: "Нишанов", counter: "2" },
+    { number: "9.", name: "Шарапов", counter: "2" },
     // Добавьте остальных игроков
 ];
 
@@ -16,6 +18,8 @@ const assistsData = [
     { number: "2.", name: "Пашаев", counter: "1" },
     { number: "3.", name: "Долгов", counter: "1" },
     { number: "4.", name: "Костич", counter: "1" },
+    { number: "5.", name: "Волконский", counter: "1" },
+    { number: "6.", name: "Петрищев", counter: "1" },
     // Добавьте остальных игроков
 ];
 
@@ -35,41 +39,42 @@ const goalkeepersZero = [
 
 // Посещаемость
 const zanettiTopData = [
-    { name: "Батуев", training: 14 },
-    { name: "Белоножкин", training: 7 },
+    { name: "Батуев", training: 16 },
+    { name: "Белоножкин", training: 11 },
     { name: "Бутин", training: 11 },
     { name: "Власов", training: 16 },
-    { name: "Волконский", training: 13 },
-    { name: "Долгов", training: 16 },
-    { name: "Швамбергер", training: 10 },
+    { name: "Волконский", training: 19 },
+    { name: "Иванов", training: 19 },
+    { name: "Долгов", training: 23 },
+    { name: "Швамбергер", training: 14 },
     { name: "Исаев", training: 8 },
     { name: "Пашаев", training: 4 },
-    { name: "Королев Д.", training: 16 },
-    { name: "Костич", training: 9 },
-    { name: "Ларин", training: 6 },
-    { name: "Матвеев", training: 27 },
+    { name: "Королев Д.", training: 18 },
+    { name: "Королев И.", training: 10 },
+    { name: "Костич", training: 10 },
+    { name: "Ларин", training: 9 },
+    { name: "Матвеев", training: 34 },
+    { name: "Нишанов", training: 6 },
     { name: "Мищенко", training: 3 },
-    { name: "Петрищев", training: 28 },
+    { name: "Петрищев", training: 34 },
     { name: "Родионов", training: 0 },
     { name: "Тапчан", training: 0 },
     { name: "Савельев", training: 11 },
-    { name: "Салимгареев", training: 21 },
-    { name: "Сыпченко", training: 13 },
-    { name: "Амири", training: 23 },
-    { name: "Шаропов", training: 23 },
-    { name: "Шеин", training: 20 },
+    { name: "Салимгареев", training: 24 },
+    { name: "Сыпченко", training: 16 },
+    { name: "Амири", training: 29 },
+    { name: "Шаропов", training: 29 },
+    { name: "Шеин", training: 27 },
     { name: "Юсуф", training: 4 },
-    { name: "Иванов", training: 15 },
     { name: "Аралекян", training: 5 },
     { name: "Демидов", training: 1 },
-    { name: "Королев И.", training: 6 },
-    { name: "Пожидаев", training: 19 },
+    { name: "Пожидаев", training: 23 },
     { name: "Хамзин", training: 2 },
     { name: "Турнусов", training: 2 },
-    { name: "Штепа", training: 2 },
-    { name: "Полевой", training: 2 },
-    { name: "Нишанов", training: 2 },
-    { name: "Саидов", training: 2 },
+    { name: "Штепа", training: 4 },
+    { name: "Полевой", training: 9 },
+    { name: "Саидов", training: 4 },
+    { name: "Малышев", training: 3 },
 
 ];
 
