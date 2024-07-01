@@ -8,7 +8,7 @@ const goalsData = [
     { number: "6.", name: "Пашаев", counter: "1" },
     { number: "7.", name: "Пожидаев", counter: "1" },
     { number: "8.", name: "Нишанов", counter: "2" },
-    { number: "9.", name: "Шарапов", counter: "4" },
+    { number: "9.", name: "Шаропов", counter: "4" },
     // Добавьте остальных игроков
 ];
 
@@ -20,7 +20,7 @@ const assistsData = [
     { number: "4.", name: "Костич", counter: "1" },
     { number: "5.", name: "Волконский", counter: "1" },
     { number: "6.", name: "Петрищев", counter: "3" },
-    { number: "7.", name: "Шарапов", counter: "2" },
+    { number: "7.", name: "Шаропов", counter: "2" },
     { number: "8.", name: "Матвеев", counter: "1" },
     { number: "9.", name: "Штепа", counter: "1" },
     { number: "10.", name: "Сыпченка", counter: "1" },
